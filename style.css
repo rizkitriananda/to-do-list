@@ -1,0 +1,78 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --noto_sans: "Noto Sans", sans-serif;
+  --montserat: "Montserrat", sans-serif;
+  --instrumen: "Instrument Sans", sans-serif;
+  --button: #ffcb74;
+  --background: #2f2f2f;
+  --box: #444654;
+  --font_head: #f6f6f6;
+  --font: #111111;
+}
+
+body {
+  background-color: #252a2f;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 20px 0 0 35px;
+  color: var(--font_head);
+  font-family: var(--noto_sans);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+form textarea {
+  width: 80%;
+  margin: 50px 0 0 34px;
+  resize: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: var(--font_head);
+  background-color: var(--box);
+}
+
+article .btn button {
+  margin: 10px 0 0 250px;
+  padding: 3px 5px;
+  color: var(--font);
+  font-family: var(--noto_sans);
+  background-color: var(--button);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #acacac;
+  font-family: var(--noto_sans);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+ul li {
+  list-style-type: circle;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+  background-color: #f8f8f8;
+  margin-top: 5px;
+  padding: 0 0 0 5px;
+  box-sizing: border-box;
+}
+
+ul li i {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  color: red;
+  cursor: pointer;
+}
