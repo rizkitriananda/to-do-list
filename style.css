@@ -11,15 +11,16 @@
 }
 
 body {
-  background-color: #252a2f;
+  background-color: #252525;
 }
 
 .container {
+  height: 4000px;
   margin: 0 auto;
 }
 
 header h1 {
-  margin: 20px 0 0 35px;
+  margin: 20px 0 0 100px;
   color: var(--font_head);
   font-family: var(--noto_sans);
 }
@@ -57,10 +58,13 @@ ul {
   font-family: var(--noto_sans);
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 ul li {
-  list-style-type: circle;
+  width: 100%;
+  list-style-type: none;
   position: relative;
   border-radius: 10px 0 0 10px;
   background-color: #f8f8f8;
@@ -75,4 +79,35 @@ ul li i {
   right: 10px;
   color: red;
   cursor: pointer;
+}
+
+ul li input {
+  position: absolute;
+  top: 2px;
+  right: 26px;
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  form textarea {
+    width: 600px;
+    margin: 50px 0 0 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+  article .btn button {
+    margin: 10px 0 0 900px;
+    padding: 3px 5px;
+  }
+
+  ul {
+    width: 600px;
+    margin: 50px 0 0 380px;
+  }
 }
