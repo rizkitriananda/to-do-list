@@ -3,7 +3,7 @@
   --noto_sans: "Noto Sans", sans-serif;
   --montserat: "Montserrat", sans-serif;
   --instrumen: "Instrument Sans", sans-serif;
-  --button: #ffcb74;
+  --button: #227df3;
   --background: #2f2f2f;
   --box: #444654;
   --font_head: #f6f6f6;
@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: #292b36;
 }
 
 .container {
@@ -30,24 +30,28 @@ article {
   flex-direction: column;
 }
 
-form textarea {
-  width: 80%;
+form input {
+  width: 55%;
   margin: 50px 0 0 34px;
+  padding: 3px 8px 3px 8px;
+  box-sizing: border-box;
   resize: none;
   border: 2px solid #ccc;
   border-radius: 4px;
   color: var(--font_head);
-  background-color: var(--box);
+  background-color: #dddd;
 }
 
 article .btn button {
   margin: 10px 0 0 250px;
-  padding: 3px 5px;
+  padding: 5px 10px;
   color: var(--font);
   font-family: var(--noto_sans);
+  color: white;
   background-color: var(--button);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
 }
 

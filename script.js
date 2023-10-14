@@ -1,4 +1,4 @@
-const inputText = document.querySelector("textarea");
+const inputText = document.querySelector("input");
 const ul = document.querySelector("ul");
 const btnTambah = document.querySelector(".btn.add button");
 
